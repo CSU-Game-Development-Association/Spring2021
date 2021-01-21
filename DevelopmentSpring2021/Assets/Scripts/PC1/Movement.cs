@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && onGround)
         {
             onGround = false;
-            cube.AddForce(new Vector3(1, 5, 0), ForceMode.Impulse);
+            cube.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse);
         }
     }
 
